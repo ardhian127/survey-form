@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complex Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Complex Survey Form</h1>
+    <p id="description">We value your opinion. Please take a moment to fill out our survey.</p>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <div class="form-group">
+          <label for="name" id="name-label">Full Name:</label>
+          <input type="text" id="name" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email Address:</label>
+          <input type="email" id="email" placeholder="Enter your email address" required>
+        </div>
+        <div class="form-group">
+          <label for="age" id="age-label">Age:</label>
+          <input type="number" id="age" placeholder="Enter your age" min="18" max="100" required>
+        </div>
+        <div class="form-group">
+          <label for="gender" id="gender-label">Gender:</label>
+          <select id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="education" id="education-label">Education Level:</label>
+          <select id="education">
+            <option value="high-school">High School</option>
+            <option value="college">College</option>
+            <option value="graduate">Graduate School</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Survey Questions</legend>
+        <div class="form-group">
+          <label id="experience-label">How would you rate your experience with our product?</label>
+          <div class="radio-group">
+            <input type="radio" id="experience1" name="experience" value="excellent">
+            <label for="experience1">Excellent</label>
+            <input type="radio" id="experience2" name="experience" value="good">
+            <label for="experience2">Good</label>
+            <input type="radio" id="experience3" name="experience" value="average">
+            <label for="experience3">Average</label>
+            <input type="radio" id="experience4" name="experience" value="poor">
+            <label for="experience4">Poor</label>
+            <input type="radio" id="experience5" name="experience" value="very-poor">
+            <label for="experience5">Very Poor</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label id="recommend-label">Would you recommend our product to others?</label>
+          <div class="radio-group">
+            <input type="radio" id="recommend-yes" name="recommend" value="yes">
+            <label for="recommend-yes">Yes</label>
+            <input type="radio" id="recommend-no" name="recommend" value="no">
+            <label for="recommend-no">No</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label id="improvements-label">What improvements would you suggest for our product?</label>
+          <textarea id="improvements" placeholder="Enter your suggestions here"></textarea>
+        </div>
+        <div class="form-group">
+          <label id="comments-label">Additional Comments:</label>
+          <textarea id="comments" placeholder="Enter your comments here"></textarea>
+        </div>
+      </fieldset>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
+
